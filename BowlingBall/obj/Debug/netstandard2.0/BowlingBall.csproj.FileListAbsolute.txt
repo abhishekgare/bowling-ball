@@ -1,0 +1,8 @@
+E:\bowling-ball-dotnetcore\BowlingBall\bin\Debug\netstandard2.0\BowlingBall.deps.json
+E:\bowling-ball-dotnetcore\BowlingBall\bin\Debug\netstandard2.0\BowlingBall.dll
+E:\bowling-ball-dotnetcore\BowlingBall\bin\Debug\netstandard2.0\BowlingBall.pdb
+E:\bowling-ball-dotnetcore\BowlingBall\obj\Debug\netstandard2.0\BowlingBall.csprojAssemblyReference.cache
+E:\bowling-ball-dotnetcore\BowlingBall\obj\Debug\netstandard2.0\BowlingBall.AssemblyInfoInputs.cache
+E:\bowling-ball-dotnetcore\BowlingBall\obj\Debug\netstandard2.0\BowlingBall.AssemblyInfo.cs
+E:\bowling-ball-dotnetcore\BowlingBall\obj\Debug\netstandard2.0\BowlingBall.dll
+E:\bowling-ball-dotnetcore\BowlingBall\obj\Debug\netstandard2.0\BowlingBall.pdb

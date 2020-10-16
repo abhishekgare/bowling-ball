@@ -3,20 +3,33 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace BowlingBall.Tests {
     [TestClass]
     public class GameFixture {
+        Game game;
+        public void Initialize () {
+            game = new Game ();
+        }
+
         [TestMethod]
         public void Gutter_game_score_should_be_zero_test () {
-            var game = new Game ();
             Roll (game, 0, 20);
             Assert.AreEqual (0, game.GetScore ());
         }
 
         [TestMethod]
         public void Spare () {
-            var game = new Game ();
-            game.Spare (4);
-            game.OpenFrame (10);
             Roll (game, 24, 5);
             Assert.AreEqual (21, game.GetScore ());
+        }
+
+        [TestMethod]
+        public void Strike () {
+            Roll (game, 8, 1);
+            Assert.AreEqual (26, game.GetScore ());
+        }
+
+        [TestMethod]
+        public void Strike_Final_Frame () {
+            Roll (game, 0, 0);
+            Assert.AreEqual (18, game.GetScore ());
         }
 
         private void Roll (Game game, int pins, int times) {

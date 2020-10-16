@@ -2,17 +2,17 @@ using System;
 using System.Collections;
 
 namespace BowlingBall {
-    public class BonusRoll : Frame {
+    public class BonusRoll : IFrame {
 
-        public BonusRoll (ArrayList chances, int pins) : base (chances) {
+        public BonusRoll (ArrayList chances, int pins) {
             chances.Add (pins);
         }
 
-        override public int GetScore () {
+        public int GetScore () {
             return 0;
         }
 
-        override protected int FrameSize () {
+        public int FrameSize () {
             return 0;
         }
     }

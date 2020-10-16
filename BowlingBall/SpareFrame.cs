@@ -2,17 +2,26 @@ using System;
 using System.Collections;
 
 namespace BowlingBall {
-    public class SpareFrame : Frame {
-
-        public SpareFrame (ArrayList chances, int pins) : base (chances) {
+    public class SpareFrame : IFrame, IBonusBall {
+        protected ArrayList _chances;
+        protected int _firstChance;
+        public SpareFrame (ArrayList chances, int pins) {
             chances.Add (pins);
         }
 
-        override public int GetScore () {
+        public int GetScore () {
             return 10 + FirstBonusBall ();;
         }
 
-        override protected int FrameSize () {
+        public int FirstBonusBall () {
+            return (int) _chances[_firstChance + FrameSize ()];
+        }
+
+        public int SecondBonusBall () {
+            throw new NotImplementedException ();
+        }
+
+        public int FrameSize () {
             return 2;
         }
     }
